@@ -19,6 +19,7 @@ async def lang_back_uz(message: types.Message, state: FSMContext):
     await message.answer("🌐 Foydalanish tilini tanlang!👇\n"
                          "________________________________\n\n"
                          "🌐 Выбери свой язык 👇", reply_markup=menu_lang)
+
     await state.finish()
 
 
