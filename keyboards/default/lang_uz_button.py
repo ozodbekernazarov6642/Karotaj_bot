@@ -14,3 +14,12 @@ menu_send_button_uz = ReplyKeyboardMarkup(
         ]
     ],resize_keyboard=True, one_time_keyboard=True
 )
+
+
+Leave_information = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text="📝 Ma'lumot To'ldirish")
+        ]
+    ],resize_keyboard=True
+)

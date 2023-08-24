@@ -3,32 +3,19 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 menu_region_uz = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="📍Andijon viloyati", callback_data="region_uz:An"),
-            InlineKeyboardButton(text="📍Buxoro viloyati", callback_data="region_uz:Bu"),
+            InlineKeyboardButton(text='"Uzbek geologiya qidiruv" AJ', callback_data="region_uz:Uz")
         ],
         [
-            InlineKeyboardButton(text="📍Farg'ona viloyati", callback_data="region_uz:Fa"),
-            InlineKeyboardButton(text="📍Jizzax viloyati", callback_data="region_uz:Ji"),
+            InlineKeyboardButton(text='"Ozarbayjon" IIChB', callback_data="region_uz:Oz")
         ],
         [
-            InlineKeyboardButton(text="📍Namangan viloyati", callback_data="region_uz:Nam"),
-            InlineKeyboardButton(text="📍Qashqadaryo viloyati", callback_data="region_uz:Qa"),
+            InlineKeyboardButton(text='"Suv tarraqiyoti" MChJ', callback_data="region_uz:St")
         ],
         [
-            InlineKeyboardButton(text="📍Navoiy viloyati", callback_data="region_uz:Nav"),
-            InlineKeyboardButton(text="📍Qoraqolpo'iston Respublikasi", callback_data="region_uz:Qo"),
+            InlineKeyboardButton(text='"Samgeoltexservis" MChJ', callback_data="region_uz:Sam")
         ],
         [
-            InlineKeyboardButton(text="📍Samarqand viloyati", callback_data="region_uz:Sa"),
-            InlineKeyboardButton(text="📍Sirdaryo viloyati", callback_data="region_uz:Si"),
-        ],
-        [
-            InlineKeyboardButton(text="📍Surxondaryo viloyati", callback_data="region_uz:Su"),
-            InlineKeyboardButton(text="📍Toshkent viloyati", callback_data="region_uz:Tov"),
-        ],
-        [
-            InlineKeyboardButton(text="📍Toshkent shahri", callback_data="region_uz:Tos"),
-            InlineKeyboardButton(text="📍Xorazm viloyati", callback_data="region_uz:Xo"),
+            InlineKeyboardButton(text='"Regionalgeologiya" DUK', callback_data="region_uz:Reg")
         ],
         [
             InlineKeyboardButton(text="⬅️ Ortga", callback_data="region_uz:back")
