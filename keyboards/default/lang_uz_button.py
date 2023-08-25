@@ -23,3 +23,12 @@ Leave_information = ReplyKeyboardMarkup(
         ]
     ],resize_keyboard=True
 )
+
+
+Leave_information = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text="📝 Ma'lumot To'ldirish")
+        ]
+    ],resize_keyboard=True
+)
