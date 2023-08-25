@@ -12,5 +12,4 @@ async def appeal_uz(message: types.Message):
                          "Ma'lumotingizni to'ldiring ✍🏻", reply_markup=Leave_information)
     await Appeal_state.appeal_state.set()
 
-# @dp.message_handler(text="📝 Ma'lumot To'ldirish")
-# async def 
+

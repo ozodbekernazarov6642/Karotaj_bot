@@ -7,4 +7,5 @@ from . import bot_uzlang_handler
 from . import bot_rulang_handler
 from . import region_uz_handler
 from . import expedition_uz_handler
+from . import well_number_uz
 from . import echo
