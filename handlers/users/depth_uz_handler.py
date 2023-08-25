@@ -1,0 +1,1 @@
+@dp.callback_query_handler(text)
