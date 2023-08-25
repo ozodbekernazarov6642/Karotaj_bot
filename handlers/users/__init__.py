@@ -5,4 +5,6 @@ from . import back_ru_handler
 from . import appeal_uz
 from . import bot_uzlang_handler
 from . import bot_rulang_handler
+from . import region_uz_handler
+from . import expedition_uz_handler
 from . import echo

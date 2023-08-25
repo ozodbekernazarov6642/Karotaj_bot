@@ -2,8 +2,9 @@ from aiogram.dispatcher import FSMContext
 from aiogram import types
 from keyboards.default.language_button import menu_lang
 from keyboards.default.lang_uz_button import menu_send_button_uz
-from keyboards.inline.expedition_uz_inlineKeyboard import menu_expedition_uz_uz
-from keyboards.inline.region_uz_InlineKeyboard import menu_region_uz
+from keyboards.inline.expedition_uz_reg import menu_expedition_uz_reg
+from keyboards.inline.expedition_uz_uz import menu_expedition_uz_uz
+from keyboards.inline.region_uz import menu_region_uz
 from states.lang_state import Lang_state
 
 from loader import dp
@@ -38,7 +39,13 @@ async def expedition_uz_back(call: types.CallbackQuery):
     await call.message.answer("Korxonani tanlang", reply_markup=menu_region_uz)
 
 
-@dp.callback_query_handler(text="plot_uz:back", state=Lang_state.uzb)
+@dp.callback_query_handler(text="plot_uz_uz:back", state=Lang_state.uzb)
 async def plot_uz_back(call: types.CallbackQuery):
     await call.message.delete()
     await call.message.answer("Ekspeditsiyani tanlang", reply_markup=menu_expedition_uz_uz)
+
+
+@dp.callback_query_handler(text="plot_uz_reg:back", state=Lang_state.uzb)
+async def plot_uz_back(call: types.CallbackQuery):
+    await call.message.delete()
+    await call.message.answer("Ekspeditsiyani tanlang", reply_markup=menu_expedition_uz_reg)

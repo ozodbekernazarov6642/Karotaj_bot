@@ -2,7 +2,7 @@ from aiogram import types
 from aiogram.types import ReplyKeyboardRemove
 from keyboards.default.lang_ru_button import menu_send_button_ru
 from states.lang_state import Lang_state
-from keyboards.inline.region_ru_InlineKeyboard import menu_region_ru
+from keyboards.inline.region_ru import menu_region_ru
 
 
 from loader import dp, bot
