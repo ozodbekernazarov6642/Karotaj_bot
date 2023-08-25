@@ -18,15 +18,6 @@ async def lang_back_uz(message: types.Message, state: FSMContext):
     await state.finish()
 
 
-@dp.message_handler(text="⬅️ Назад", state=Lang_state.ru)
-async def lang_back_uz(message: types.Message, state: FSMContext):
-    await message.answer("🌐 Foydalanish tilini tanlang!👇\n"
-                         "________________________________\n\n"
-                         "🌐 Выбери свой язык 👇", reply_markup=menu_lang)
-
-    await state.finish()
-
-
 @dp.callback_query_handler(text="region_uz:back", state=Lang_state.uzb)
 async def region_uz_back(call: types.CallbackQuery):
     await call.message.delete()
