@@ -4,7 +4,7 @@ from keyboards.inline.plot_uz_reg import menu_plot_uz_muz, menu_plot_uz_qor
 from keyboards.inline.plot_uz_uz import menu_plot_uz_zarafshon, menu_plot_uz_shim, menu_plot_uz_zarmitan, \
     menu_plot_uz_hisor, menu_plot_uz_surxon, menu_plot_uz_kuk
 from loader import dp
-from states.lang_state import Lang_state
+from states.uz_states import menu_uz
 
 
 @dp.callback_query_handler(text="expedition_uz:Zarafshon", state=Lang_state.uzb)

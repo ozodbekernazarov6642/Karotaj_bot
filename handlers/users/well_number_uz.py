@@ -1,18 +1,23 @@
 from aiogram.dispatcher.filters import Text
 from aiogram.types import CallbackQuery
+from aiogram.dispatcher import FSMContext
 from aiogram import types
 import re
 from loader import dp
-from states.lang_state import Lang_state
+from states.uz_states import menu_uz
 
 
-@dp.callback_query_handler(Text(startswith='plot_uz'), state=Lang_state.uzb)
-async def well_number_uz(call: CallbackQuery):
+@dp.callback_query_handler(Text(startswith='plot_uz'), state=menu_uz.plot)
+async def well_number_uz(call: CallbackQuery, state: FSMContext):
+    await state.update_data(
+        'plot_name':
+    )
     await call.message.delete()
     await call.message.answer(f"Quduq raqamini kiriting 👇")
+    await menu_uz.next()
 
 
-@dp.message_handler(Text(startswith="Quduq raqmini"), state=Lang_state.uzb)
+@dp.message_handler(Text(startswith="Quduq raqmini"), state=menu_uz.depth)
 async def well_number_uz_check(message: types.Message):
     pattern = r"^[1-9]\d{4}$"
     try:
