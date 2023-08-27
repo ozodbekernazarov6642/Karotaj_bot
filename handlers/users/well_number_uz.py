@@ -9,9 +9,6 @@ from states.uz_states import menu_uz
 
 @dp.callback_query_handler(Text(startswith='plot_uz'), state=menu_uz.plot)
 async def well_number_uz(call: CallbackQuery, state: FSMContext):
-    await state.update_data(
-        'plot_name':
-    )
     await call.message.delete()
     await call.message.answer(f"Quduq raqamini kiriting 👇")
     await menu_uz.next()
