@@ -15,7 +15,7 @@ async def table_uz(message: types.Message):
 @dp.message_handler(text="✍🏻 Buyurtma berish", state=menu_uz.uz_lang)
 async def send_application(message: types.Message):
     await message.answer("Buyurtma Hududni tanlang", reply_markup=menu_region_uz)
-
+    await menu_uz.next()
 
 
 

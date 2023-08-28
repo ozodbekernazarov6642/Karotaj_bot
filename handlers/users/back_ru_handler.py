@@ -8,18 +8,12 @@ from keyboards.inline.expedition_ru_reg import menu_expedition_ru_reg
 from keyboards.inline.expedition_ru_uz import menu_expedition_ru_uz
 from keyboards.inline.region_ru import menu_region_ru
 from keyboards.inline.region_uz import menu_region_uz
-from states.lang_state import Lang_state
+from states.uz_states import menu_uz
 
 from loader import dp
 
 
-@dp.callback_query_handler(text="region_ru:back", state=Lang_state.ru)
-async def region_uz_back(call: types.CallbackQuery):
-    await call.message.delete()
-    await call.message.answer("Выберите одну из кнопок🤳", reply_markup=menu_send_button_ru)
-
-
-@dp.message_handler(text="⬅️ Назад", state=Lang_state.ru)
+@dp.message_handler(text="⬅️ Назад", state=menu_uz.ru_lang)
 async def lang_back_uz(message: types.Message, state: FSMContext):
     await message.answer("🌐 Foydalanish tilini tanlang!👇\n"
                          "________________________________\n\n"
@@ -28,19 +22,29 @@ async def lang_back_uz(message: types.Message, state: FSMContext):
     await state.finish()
 
 
-@dp.callback_query_handler(text="expedition_ru:back", state=Lang_state.ru)
+@dp.callback_query_handler(text="region_ru:back", state=menu_uz.ru_lang)
+async def region_uz_back(call: types.CallbackQuery):
+    await call.message.delete()
+    await call.message.answer("Выберите одну из кнопок🤳", reply_markup=menu_send_button_ru)
+    await menu_uz.previous()
+
+
+@dp.callback_query_handler(text="expedition_ru:back", state=menu_uz.ru_lang)
 async def expedition_uz_back(call: types.CallbackQuery):
     await call.message.delete()
     await call.message.answer("Выберите предприятие", reply_markup=menu_region_ru)
+    await menu_uz.previous()
 
 
-@dp.callback_query_handler(text="plot_ru_uz:back", state=Lang_state.ru)
+@dp.callback_query_handler(text="plot_ru_uz:back", state=menu_uz.ru_lang)
 async def plot_uz_back(call: types.CallbackQuery):
     await call.message.delete()
     await call.message.answer("Выберите экспедицию", reply_markup=menu_expedition_ru_uz)
+    await menu_uz.previous()
 
 
-@dp.callback_query_handler(text="plot_ru_reg:back", state=Lang_state.ru)
+@dp.callback_query_handler(text="plot_ru_reg:back", state=menu_uz.ru_lang)
 async def plot_uz_back(call: types.CallbackQuery):
     await call.message.delete()
     await call.message.answer("Выберите экспедицию", reply_markup=menu_expedition_ru_reg)
+    await menu_uz.previous()

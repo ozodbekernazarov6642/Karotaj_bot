@@ -1,6 +1,6 @@
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandHelp
-from states.lang_state import Lang_state
+from states.uz_states import menu_uz
 from loader import dp
 
 
@@ -13,7 +13,7 @@ async def bot_help(message: types.Message):
     await message.answer("\n".join(text))
 
 
-@dp.message_handler(CommandHelp(), state=Lang_state.ru)
+@dp.message_handler(CommandHelp(), state=menu_uz.uz_lang)
 async def bot_help(message: types.Message):
     text = ("Buyruqlar: ",
             "/start - Botni ishga tushirish",
@@ -22,7 +22,7 @@ async def bot_help(message: types.Message):
     await message.answer("\n".join(text))
 
 
-@dp.message_handler(CommandHelp(), state=Lang_state.uzb)
+@dp.message_handler(CommandHelp(), state=menu_uz.uz_lang)
 async def bot_help(message: types.Message):
     text = ("Buyruqlar: ",
             "/start - Botni ishga tushirish",

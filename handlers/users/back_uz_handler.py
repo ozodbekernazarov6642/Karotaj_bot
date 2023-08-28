@@ -29,15 +29,18 @@ async def region_uz_back(call: types.CallbackQuery):
 async def expedition_uz_back(call: types.CallbackQuery):
     await call.message.delete()
     await call.message.answer("Korxonani tanlang", reply_markup=menu_region_uz)
+    await menu_uz.previous()
 
 
 @dp.callback_query_handler(text="plot_uz_uz:back", state=menu_uz.uz_lang)
 async def plot_uz_back(call: types.CallbackQuery):
     await call.message.delete()
     await call.message.answer("Ekspeditsiyani tanlang", reply_markup=menu_expedition_uz_uz)
+    await menu_uz.previous()
 
 
 @dp.callback_query_handler(text="plot_uz_reg:back", state=menu_uz.uz_lang)
 async def plot_uz_back(call: types.CallbackQuery):
     await call.message.delete()
     await call.message.answer("Ekspeditsiyani tanlang", reply_markup=menu_expedition_uz_reg)
+    await menu_uz.previous()

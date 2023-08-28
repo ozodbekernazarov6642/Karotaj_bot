@@ -1,6 +1,7 @@
 from aiogram.dispatcher.filters.state import State, StatesGroup
 
 class menu_uz(StatesGroup):
+    ru_lang = State()
     uz_lang = State()
     region = State()
     expedition = State()

@@ -2,8 +2,7 @@ from aiogram import types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.builtin import CommandStart
 from keyboards.default.language_button import menu_lang
-from states.lang_state import Lang_state
-from states.lang_state import Lang_state
+from states.uz_states import menu_uz
 from loader import dp
 
 
@@ -14,7 +13,7 @@ async def bot_start(message: types.Message):
                          f"Здравствуйте, выбери свой язык 👇", reply_markup=menu_lang)
 
 
-@dp.message_handler(CommandStart(), state=Lang_state.uzb)
+@dp.message_handler(CommandStart(), state=menu_uz.uz_lang)
 async def bot_start(message: types.Message, state: FSMContext):
     await message.answer(f"<i>Assalomu aleykum, foydalanish tilini tanlang!</i> 👇\n"
                          f"___________________________________\n\n"
@@ -22,7 +21,7 @@ async def bot_start(message: types.Message, state: FSMContext):
     await state.finish()
 
 
-@dp.message_handler(CommandStart(), state=Lang_state.ru)
+@dp.message_handler(CommandStart(), state=menu_uz.ru_lang)
 async def bot_start(message: types.Message, state: FSMContext):
     await message.answer(f"<i>Assalomu aleykum, foydalanish tilini tanlang!</i> 👇\n"
                          f"___________________________________\n\n"
