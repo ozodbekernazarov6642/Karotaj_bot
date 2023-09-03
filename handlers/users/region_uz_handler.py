@@ -31,7 +31,6 @@ async def send_expedition(call: types.callback_query):
     region = call.data.split(':')
     app_list.app_list["region"] = region[1]
     await call.answer("❌Ekspeditsiya mavjud emas", show_alert=True)
-    await menu_uz.next()
 
 
 @dp.callback_query_handler(text='region_uz:"Samgeoltexservis" MChJ', state=menu_uz.region)
@@ -39,7 +38,6 @@ async def send_expedition(call: types.callback_query):
     region = call.data.split(':')
     app_list.app_list["region"] = region[1]
     await call.answer("❌Ekspeditsiya mavjud emas", show_alert=True)
-    await menu_uz.next()
 
 
 @dp.callback_query_handler(text='region_uz:"Ozarbayjon" IIChB', state=menu_uz.region)
@@ -47,4 +45,3 @@ async def send_expedition(call: types.callback_query):
     region = call.data.split(':')
     app_list.app_list["region"] = region[1]
     await call.answer("❌Ekspeditsiya mavjud emas", show_alert=True)
-    await menu_uz.next()

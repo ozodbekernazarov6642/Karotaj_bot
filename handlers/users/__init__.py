@@ -8,5 +8,15 @@ from . import bot_rulang_handler
 from . import region_uz_handler
 from . import expedition_uz_handler
 from . import expedition_ru_handler
-from . import well_number_uz
+from . import plot_uz_handler
+from . import well_number_handler
+from . import depth_handler
+from . import methods_uz_handler
+from . import date_handler
+from . import name_handler
+from . import position_handler
+from . import state_number_handler
+from . import drill_type_handler
+from . import preparation_time_uz_handler
+from . import confirmation_uz_handler
 from . import echo

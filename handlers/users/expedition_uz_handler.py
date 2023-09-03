@@ -1,4 +1,6 @@
 from aiogram import types
+from aiogram.dispatcher.filters import state
+from aiogram.dispatcher.filters.state import State
 
 from keyboards.inline.plot_uz_reg import menu_plot_uz_muz, menu_plot_uz_qor
 from keyboards.inline.plot_uz_uz import menu_plot_uz_zarafshon, menu_plot_uz_shim, menu_plot_uz_zarmitan, \
@@ -66,9 +68,7 @@ async def send_expedition(call: types.CallbackQuery):
 async def send_expedition(call: types.callback_query):
     expedition = call.data.split(":")[1]
     app_list["expedition"] = expedition
-    await call.message.delete()
     await call.answer("❌Uchastka mavjud emas", show_alert=True)
-    await menu_uz.next()
 
 
 @dp.callback_query_handler(text='expedition_uz:"Markaziy '
@@ -95,15 +95,11 @@ async def send_expedition(call: types.CallbackQuery):
 async def send_expedition(call: types.callback_query):
     expedition = call.data.split(":")[1]
     app_list["expedition"] = expedition
-    await call.message.delete()
     await call.answer("❌Uchastka mavjud emas", show_alert=True)
-    await menu_uz.next()
 
 
 @dp.callback_query_handler(text='expedition_uz:"Markaziy" GGE', state=menu_uz.expedition)
 async def send_expedition(call: types.callback_query):
     expedition = call.data.split(":")[1]
     app_list["expedition"] = expedition
-    await call.message.delete()
     await call.answer("❌Uchastka mavjud emas", show_alert=True)
-    await menu_uz.next()

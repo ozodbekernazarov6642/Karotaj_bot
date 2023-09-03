@@ -13,10 +13,6 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer(f"Korxona nomi: " + app_list.get("region") + "\n"
-                                                                           "Ekspeditsiya nomi: " + app_list.get(
-        "expedition") + "\n"
-                        "Uchastka nomi: " + app_list.get("plot"))
     await call.message.answer("Quduq raqmini kiriting")
     await menu_uz.next()
 
