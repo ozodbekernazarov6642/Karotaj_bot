@@ -1,5 +1,4 @@
 from aiogram import types
-
 from keyboards.inline.expedition_uz_reg import menu_expedition_uz_reg
 from keyboards.inline.expedition_uz_uz import menu_expedition_uz_uz
 from loader import dp

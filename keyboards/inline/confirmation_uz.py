@@ -1,9 +1,9 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-confirmation = InlineKeyboardMarkup(
+confirmation_uz = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="Tasdiqlash", callback_data="confirmation"),
+            InlineKeyboardButton(text="✅ Tasdiqlash", callback_data="confirmation"),
         ]
     ]
 )

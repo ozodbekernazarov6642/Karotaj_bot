@@ -12,7 +12,7 @@ method_uz = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(text="Kavornometriya (KV)", callback_data="Kavornometriya (KV)"),
-            InlineKeyboardButton(text="MAgnit karotaj (KVM)", callback_data="Magnit karotaj (KVM)"),
+            InlineKeyboardButton(text="Magnit karotaj (KVM)", callback_data="Magnit karotaj (KVM)"),
         ],
     ]
 )

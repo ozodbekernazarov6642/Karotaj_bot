@@ -6,6 +6,7 @@ import re
 from loader import dp
 from states.uz_states import menu_uz
 from utils.list.app_list import app_list
+from keyboards.default.menu_button import menu_back
 
 
 @dp.callback_query_handler(text="plot_uz:Salin", state=menu_uz.plot)
@@ -13,7 +14,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -22,7 +23,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -31,7 +32,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -40,7 +41,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -49,7 +50,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -58,7 +59,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -67,7 +68,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -76,7 +77,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -85,7 +86,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -94,7 +95,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -103,7 +104,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -112,7 +113,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -121,7 +122,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -130,7 +131,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -139,7 +140,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -148,7 +149,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -157,7 +158,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -166,7 +167,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -175,7 +176,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -184,7 +185,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -193,7 +194,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -202,7 +203,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -211,7 +212,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -220,7 +221,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -229,7 +230,16 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
+    await menu_uz.next()
+
+
+@dp.callback_query_handler(text="plot_uz:Sulatsoy", state=menu_uz.plot)
+async def well_number_uz(call: CallbackQuery, state: FSMContext):
+    plot = call.data.split(":")[1]
+    app_list["plot"] = plot
+    await call.message.delete()
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -238,7 +248,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -247,7 +257,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -256,7 +266,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -265,7 +275,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -274,7 +284,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -283,7 +293,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -292,7 +302,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -301,7 +311,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -310,7 +320,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -319,7 +329,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -328,7 +338,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -337,7 +347,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -346,7 +356,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -355,7 +365,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -364,7 +374,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -373,7 +383,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -382,7 +392,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -391,7 +401,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -400,7 +410,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -409,7 +419,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -418,7 +428,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -427,7 +437,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -436,7 +446,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -445,7 +455,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -454,7 +464,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -463,7 +473,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -472,7 +482,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -481,7 +491,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -490,7 +500,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -499,7 +509,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -508,7 +518,7 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
 
 
@@ -517,5 +527,5 @@ async def well_number_uz(call: CallbackQuery, state: FSMContext):
     plot = call.data.split(":")[1]
     app_list["plot"] = plot
     await call.message.delete()
-    await call.message.answer("Quduq raqmini kiriting")
+    await call.message.answer("Quduq raqmini kiriting", reply_markup=menu_back)
     await menu_uz.next()
